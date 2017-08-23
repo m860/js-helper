@@ -7,7 +7,7 @@
 
 ## extendFormatterConfig
 
-[src/data.js:37-39](https://github.com/m860/js-helper/blob/106c0e381c1f27462b978ff4213201b845a9d7fa/src/data.js#L37-L39 "Source code on GitHub")
+[src/dataFormat.js:37-39](https://github.com/m860/js-helper/blob/11c50931c2951580c148ac7f06fbc509ffa01f7f/src/dataFormat.js#L37-L39 "Source code on GitHub")
 
 扩展FormatterConfig配置
 
@@ -45,7 +45,7 @@ Returns **void**
 
 ## format
 
-[src/data.js:47-78](https://github.com/m860/js-helper/blob/106c0e381c1f27462b978ff4213201b845a9d7fa/src/data.js#L47-L78 "Source code on GitHub")
+[src/dataFormat.js:47-78](https://github.com/m860/js-helper/blob/11c50931c2951580c148ac7f06fbc509ffa01f7f/src/dataFormat.js#L47-L78 "Source code on GitHub")
 
 数据格式化
 

@@ -1,7 +1,7 @@
 /**
  * Created by jean.h.ma on 10/08/2017.
  */
-import {extendFormatterConfig,format} from '../src/data'
+import {extendFormatterConfig,format} from '../src/dataFormat'
 
 describe("test data format", ()=> {
 
