@@ -18,3 +18,8 @@
 $ npm test
 ```
 
+## TODO
+
+- [x] data format
+- [x] mobile detection
+
