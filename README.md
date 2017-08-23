@@ -4,7 +4,7 @@
 
 <!-- endbadge -->
 
-[API document](./API.md)
+[Example & API document](./API.md)
 
 ## Install
 
