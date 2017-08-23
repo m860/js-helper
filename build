@@ -1,0 +1,2 @@
+./node_modules/.bin/babel --presets=es2015,stage-0,react ./src -d ./libs
+documentation build ./src -f=md -g=true -o=./API.md
