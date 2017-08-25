@@ -58,7 +58,7 @@ function extendFormatterConfig() {
  * 数据格式化
  *
  * @example <caption>format money</caption>
- * const formattedValue=format(1,'money')
+ * const formattedValue=format(10000,'money')	//output 1,000.00
  * */
 function format(value, formatter) {
 	var placeholder = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "N/A";

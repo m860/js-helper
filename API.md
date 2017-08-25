@@ -13,7 +13,7 @@
 
 ## extendFormatterConfig
 
-[src/dataFormat.js:37-39](https://github.com/m860/js-helper/blob/30c1938571c2321926e1c71d24bec37b6d35880f/src/dataFormat.js#L37-L39 "Source code on GitHub")
+[src/dataFormat.js:37-39](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/dataFormat.js#L37-L39 "Source code on GitHub")
 
 扩展FormatterConfig配置
 
@@ -51,7 +51,7 @@ Returns **void**
 
 ## format
 
-[src/dataFormat.js:47-78](https://github.com/m860/js-helper/blob/30c1938571c2321926e1c71d24bec37b6d35880f/src/dataFormat.js#L47-L78 "Source code on GitHub")
+[src/dataFormat.js:47-78](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/dataFormat.js#L47-L78 "Source code on GitHub")
 
 数据格式化
 
@@ -66,14 +66,14 @@ Returns **void**
 _format money_
 
 ```javascript
-const formattedValue=format(1,'money')
+const formattedValue=format(10000,'money')	//output 1,000.00
 ```
 
 Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
 ## isAndroid
 
-[src/mobileDetection.js:5-7](https://github.com/m860/js-helper/blob/30c1938571c2321926e1c71d24bec37b6d35880f/src/mobileDetection.js#L5-L7 "Source code on GitHub")
+[src/mobileDetection.js:5-7](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/mobileDetection.js#L5-L7 "Source code on GitHub")
 
 是否是android
 
@@ -81,7 +81,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 ## isBlackBerry
 
-[src/mobileDetection.js:11-13](https://github.com/m860/js-helper/blob/30c1938571c2321926e1c71d24bec37b6d35880f/src/mobileDetection.js#L11-L13 "Source code on GitHub")
+[src/mobileDetection.js:11-13](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/mobileDetection.js#L11-L13 "Source code on GitHub")
 
 是否是黑莓
 
@@ -89,7 +89,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 ## isIOS
 
-[src/mobileDetection.js:17-19](https://github.com/m860/js-helper/blob/30c1938571c2321926e1c71d24bec37b6d35880f/src/mobileDetection.js#L17-L19 "Source code on GitHub")
+[src/mobileDetection.js:17-19](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/mobileDetection.js#L17-L19 "Source code on GitHub")
 
 是否是ios
 
@@ -97,7 +97,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 ## isOpera
 
-[src/mobileDetection.js:23-25](https://github.com/m860/js-helper/blob/30c1938571c2321926e1c71d24bec37b6d35880f/src/mobileDetection.js#L23-L25 "Source code on GitHub")
+[src/mobileDetection.js:23-25](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/mobileDetection.js#L23-L25 "Source code on GitHub")
 
 是否是opera
 
@@ -105,7 +105,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 ## isWindows
 
-[src/mobileDetection.js:29-31](https://github.com/m860/js-helper/blob/30c1938571c2321926e1c71d24bec37b6d35880f/src/mobileDetection.js#L29-L31 "Source code on GitHub")
+[src/mobileDetection.js:29-31](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/mobileDetection.js#L29-L31 "Source code on GitHub")
 
 是否是windows
 
@@ -113,7 +113,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 ## any
 
-[src/mobileDetection.js:35-37](https://github.com/m860/js-helper/blob/30c1938571c2321926e1c71d24bec37b6d35880f/src/mobileDetection.js#L35-L37 "Source code on GitHub")
+[src/mobileDetection.js:35-37](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/mobileDetection.js#L35-L37 "Source code on GitHub")
 
 是否是mobile
 

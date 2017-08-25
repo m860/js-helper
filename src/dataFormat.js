@@ -42,7 +42,7 @@ export function extendFormatterConfig(config: ?Object = {}): void {
  * 数据格式化
  *
  * @example <caption>format money</caption>
- * const formattedValue=format(1,'money')
+ * const formattedValue=format(10000,'money')	//output 1,000.00
  * */
 export function format(value: any, formatter: ?String|?Function|?Array, placeholder: ?String = "N/A"): String {
 	if (!value) {
