@@ -1,3 +1,10 @@
+/**
+ * @example
+ *
+ * import {mobileDetection} from 'js-helper'
+ * const isAndroid=mobileDetection.isAndroid();
+ *
+ * */
 export default {
 	/**
 	 * 是否是android

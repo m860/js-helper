@@ -30,6 +30,8 @@ var formatterConfig = {
  * 扩展FormatterConfig配置
  *
  * @example <caption>simple</caption>
+ * import {dataFormat} from 'js-helper'
+ * const {extendFormatterConfig,format}=dataFormat;
  * extendFormatterConfig({
  * 	prefix$:function(value){
  * 		return '$'+value;
@@ -39,6 +41,8 @@ var formatterConfig = {
  * const formattedValue=format(1,'prefix$');	// output `$1`
  *
  * @example <caption>pass parameter</caption>
+ * import {dataFormat} from 'js-helper'
+ * const {extendFormatterConfig,format}=dataFormat;
  * extendFormatterConfig({
  * 	prefix:function(value,prefix){
  * 		return prefix+value;
@@ -58,7 +62,8 @@ function extendFormatterConfig() {
  * 数据格式化
  *
  * @example <caption>format money</caption>
- * const formattedValue=format(10000,'money')	//output 1,000.00
+ * import {dataFormat} from 'js-helper'
+ * const formattedValue=dataFormat.format(10000,'money')	//output 1,000.00
  * */
 function format(value, formatter) {
 	var placeholder = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "N/A";

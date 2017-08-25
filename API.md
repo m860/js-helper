@@ -4,16 +4,17 @@
 
 -   [extendFormatterConfig](#extendformatterconfig)
 -   [format](#format)
--   [isAndroid](#isandroid)
--   [isBlackBerry](#isblackberry)
--   [isIOS](#isios)
--   [isOpera](#isopera)
--   [isWindows](#iswindows)
--   [any](#any)
+-   [mobileDetection](#mobiledetection)
+    -   [isAndroid](#isandroid)
+    -   [isBlackBerry](#isblackberry)
+    -   [isIOS](#isios)
+    -   [isOpera](#isopera)
+    -   [isWindows](#iswindows)
+    -   [any](#any)
 
 ## extendFormatterConfig
 
-[src/dataFormat.js:37-39](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/dataFormat.js#L37-L39 "Source code on GitHub")
+[src/dataFormat.js:41-43](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/dataFormat.js#L41-L43 "Source code on GitHub")
 
 扩展FormatterConfig配置
 
@@ -26,6 +27,8 @@
 _simple_
 
 ```javascript
+import {dataFormat} from 'js-helper'
+const {extendFormatterConfig,format}=dataFormat;
 extendFormatterConfig({
 	prefix$:function(value){
 		return '$'+value;
@@ -38,6 +41,8 @@ const formattedValue=format(1,'prefix$');	// output `$1`
 _pass parameter_
 
 ```javascript
+import {dataFormat} from 'js-helper'
+const {extendFormatterConfig,format}=dataFormat;
 extendFormatterConfig({
 	prefix:function(value,prefix){
 		return prefix+value;
@@ -51,7 +56,7 @@ Returns **void**
 
 ## format
 
-[src/dataFormat.js:47-78](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/dataFormat.js#L47-L78 "Source code on GitHub")
+[src/dataFormat.js:52-83](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/dataFormat.js#L52-L83 "Source code on GitHub")
 
 数据格式化
 
@@ -66,54 +71,66 @@ Returns **void**
 _format money_
 
 ```javascript
-const formattedValue=format(10000,'money')	//output 1,000.00
+import {dataFormat} from 'js-helper'
+const formattedValue=dataFormat.format(10000,'money')	//output 1,000.00
 ```
 
 Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** 
 
-## isAndroid
+## mobileDetection
 
-[src/mobileDetection.js:5-7](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/mobileDetection.js#L5-L7 "Source code on GitHub")
+[src/mobileDetection.js:8-45](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/mobileDetection.js#L8-L45 "Source code on GitHub")
+
+**Examples**
+
+```javascript
+import {mobileDetection} from 'js-helper'
+const isAndroid=mobileDetection.isAndroid();
+```
+
+### isAndroid
+
+[src/mobileDetection.js:12-14](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/mobileDetection.js#L12-L14 "Source code on GitHub")
 
 是否是android
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
-## isBlackBerry
+### isBlackBerry
 
-[src/mobileDetection.js:11-13](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/mobileDetection.js#L11-L13 "Source code on GitHub")
+[src/mobileDetection.js:18-20](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/mobileDetection.js#L18-L20 "Source code on GitHub")
 
 是否是黑莓
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
-## isIOS
+### isIOS
 
-[src/mobileDetection.js:17-19](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/mobileDetection.js#L17-L19 "Source code on GitHub")
+[src/mobileDetection.js:24-26](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/mobileDetection.js#L24-L26 "Source code on GitHub")
 
 是否是ios
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
-## isOpera
+### isOpera
 
-[src/mobileDetection.js:23-25](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/mobileDetection.js#L23-L25 "Source code on GitHub")
+[src/mobileDetection.js:30-32](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/mobileDetection.js#L30-L32 "Source code on GitHub")
 
 是否是opera
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
-## isWindows
+### isWindows
 
-[src/mobileDetection.js:29-31](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/mobileDetection.js#L29-L31 "Source code on GitHub")
+[src/mobileDetection.js:36-38](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/mobileDetection.js#L36-L38 "Source code on GitHub")
 
 是否是windows
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
-## any
+### any
 
-[src/mobileDetection.js:35-37](https://github.com/m860/js-helper/blob/515a7b97da479718529723cdecdf6198763a70a4/src/mobileDetection.js#L35-L37 "Source code on GitHub")
+[src/mobileDetection.js:42-44](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/mobileDetection.js#L42-L44 "Source code on GitHub")
 
 是否是mobile
 

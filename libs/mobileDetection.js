@@ -3,6 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
+/**
+ * @example
+ *
+ * import {mobileDetection} from 'js-helper'
+ * const isAndroid=mobileDetection.isAndroid();
+ *
+ * */
 exports.default = {
 	/**
   * 是否是android
