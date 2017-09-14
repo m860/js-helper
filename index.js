@@ -1,4 +1,2 @@
-module.exports={
-	dataFormat:require('./libs/dataFormat.js').default,
-	mobileDetection:require('./libs/mobileDetection.js').default
-};
+exports.dataFormat = require('./libs/dataFormat.js').default
+exports.mobileDetection = require('./libs/mobileDetection.js').default

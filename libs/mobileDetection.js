@@ -42,6 +42,13 @@ exports.default = {
 		return navigator.userAgent.match(/IEMobile/i);
 	},
 	/**
+  * 是否是微信
+  * */
+	isWeixin: function isWeixin() {
+		return (/micromessenger/.test(navigator.userAgent.toLowerCase())
+		);
+	},
+	/**
   * 是否是mobile
   * */
 	any: function any() {

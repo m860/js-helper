@@ -37,6 +37,12 @@ export default {
 		return navigator.userAgent.match(/IEMobile/i);
 	},
 	/**
+	 * 是否是微信
+	 * */
+	isWeixin: (): Boolean=> {
+		return /micromessenger/.test(navigator.userAgent.toLowerCase());
+	},
+	/**
 	 * 是否是mobile
 	 * */
 	any: (): Boolean=> {

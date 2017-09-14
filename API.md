@@ -10,11 +10,12 @@
     -   [isIOS](#isios)
     -   [isOpera](#isopera)
     -   [isWindows](#iswindows)
+    -   [isWeixin](#isweixin)
     -   [any](#any)
 
 ## extendFormatterConfig
 
-[src/dataFormat.js:41-43](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/dataFormat.js#L41-L43 "Source code on GitHub")
+[src/dataFormat.js:41-43](https://github.com/m860/js-helper/blob/9dfb60016a9d643b65e5f4317223ddd7275483ad/src/dataFormat.js#L41-L43 "Source code on GitHub")
 
 扩展FormatterConfig配置
 
@@ -56,7 +57,7 @@ Returns **void**
 
 ## format
 
-[src/dataFormat.js:52-83](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/dataFormat.js#L52-L83 "Source code on GitHub")
+[src/dataFormat.js:52-83](https://github.com/m860/js-helper/blob/9dfb60016a9d643b65e5f4317223ddd7275483ad/src/dataFormat.js#L52-L83 "Source code on GitHub")
 
 数据格式化
 
@@ -79,7 +80,7 @@ Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refer
 
 ## mobileDetection
 
-[src/mobileDetection.js:8-45](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/mobileDetection.js#L8-L45 "Source code on GitHub")
+[src/mobileDetection.js:8-51](https://github.com/m860/js-helper/blob/9dfb60016a9d643b65e5f4317223ddd7275483ad/src/mobileDetection.js#L8-L51 "Source code on GitHub")
 
 **Examples**
 
@@ -90,7 +91,7 @@ const isAndroid=mobileDetection.isAndroid();
 
 ### isAndroid
 
-[src/mobileDetection.js:12-14](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/mobileDetection.js#L12-L14 "Source code on GitHub")
+[src/mobileDetection.js:12-14](https://github.com/m860/js-helper/blob/9dfb60016a9d643b65e5f4317223ddd7275483ad/src/mobileDetection.js#L12-L14 "Source code on GitHub")
 
 是否是android
 
@@ -98,7 +99,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 ### isBlackBerry
 
-[src/mobileDetection.js:18-20](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/mobileDetection.js#L18-L20 "Source code on GitHub")
+[src/mobileDetection.js:18-20](https://github.com/m860/js-helper/blob/9dfb60016a9d643b65e5f4317223ddd7275483ad/src/mobileDetection.js#L18-L20 "Source code on GitHub")
 
 是否是黑莓
 
@@ -106,7 +107,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 ### isIOS
 
-[src/mobileDetection.js:24-26](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/mobileDetection.js#L24-L26 "Source code on GitHub")
+[src/mobileDetection.js:24-26](https://github.com/m860/js-helper/blob/9dfb60016a9d643b65e5f4317223ddd7275483ad/src/mobileDetection.js#L24-L26 "Source code on GitHub")
 
 是否是ios
 
@@ -114,7 +115,7 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 ### isOpera
 
-[src/mobileDetection.js:30-32](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/mobileDetection.js#L30-L32 "Source code on GitHub")
+[src/mobileDetection.js:30-32](https://github.com/m860/js-helper/blob/9dfb60016a9d643b65e5f4317223ddd7275483ad/src/mobileDetection.js#L30-L32 "Source code on GitHub")
 
 是否是opera
 
@@ -122,15 +123,23 @@ Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refe
 
 ### isWindows
 
-[src/mobileDetection.js:36-38](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/mobileDetection.js#L36-L38 "Source code on GitHub")
+[src/mobileDetection.js:36-38](https://github.com/m860/js-helper/blob/9dfb60016a9d643b65e5f4317223ddd7275483ad/src/mobileDetection.js#L36-L38 "Source code on GitHub")
 
 是否是windows
 
 Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
 
+### isWeixin
+
+[src/mobileDetection.js:42-44](https://github.com/m860/js-helper/blob/9dfb60016a9d643b65e5f4317223ddd7275483ad/src/mobileDetection.js#L42-L44 "Source code on GitHub")
+
+是否是微信
+
+Returns **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** 
+
 ### any
 
-[src/mobileDetection.js:42-44](https://github.com/m860/js-helper/blob/cc4b0cc7731c87dc6c43cfd2eb6f986cccdf77dc/src/mobileDetection.js#L42-L44 "Source code on GitHub")
+[src/mobileDetection.js:48-50](https://github.com/m860/js-helper/blob/9dfb60016a9d643b65e5f4317223ddd7275483ad/src/mobileDetection.js#L48-L50 "Source code on GitHub")
 
 是否是mobile
 
